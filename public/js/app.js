@@ -13,7 +13,7 @@ watherForm.addEventListener('submit', (e) => {
 
     const location = searchElement.value
 
-    const url = 'http://localhost:3030/weather?address='
+    const url = '/weather?address='
     fetch(url + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
